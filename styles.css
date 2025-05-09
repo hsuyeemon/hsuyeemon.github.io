@@ -1,0 +1,289 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
+  } 
+  
+  header {
+    background: #cee0d7;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    
+    max-width: 900px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .header-text {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 1rem;
+  }
+  
+  
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header .contact {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.3rem;
+  }
+  
+  ul {
+    padding-left: 1rem;
+  }
+  
+  li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-title {
+    font-weight: bold;
+  }
+  
+  .project-title a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .project-title a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 2rem 0;
+    color: #666;
+  }
+  
+  a {
+    color: #007bff;
+  }
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .contact a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .contact a:hover {
+    color: #0073b1; /* LinkedIn blue as hover effect */
+  }
+  
+
+  /* Header Layout */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left-side text content */
+.text-content {
+  max-width: 60%;
+}
+
+.text-content p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-icons {
+  margin-top: 1rem;
+}
+
+.contact-icons a {
+  margin-right: 1rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.location {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Right-side circular profile image */
+.profile-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ccc;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-content {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-image {
+    align-self: center;
+  }
+}
+
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  z-index: 1000;
+}
+
+.nav-left {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav-right a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-right a:hover {
+  color: #007BFF;
+}
+
+
+/* Skills */
+#skills {
+  padding: 2rem;
+}
+
+#skills h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-list i {
+  font-size: 3rem;  
+  margin-bottom: 0.5rem;
+}
+
+.skills-list span {
+  font-weight: 500;
+  color: #333;
+}
+
+.skills-list li:hover i {
+  color: #0056b3;
+}
+
+
+/* Remove default color of anchor tags */
+.contact-icons a,
+.skills-list a {
+  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Optional: Add hover effect for the icons */
+.contact-icons a:hover,
+.skills-list a:hover {
+  color: #0056b3; /* Add hover color (blue, for example) */
+}

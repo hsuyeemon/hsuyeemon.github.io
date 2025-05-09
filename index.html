@@ -1,110 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hsu Yee Mon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 2rem;
-      line-height: 1.6;
-      background-color: #f8f9fa;
-      color: #212529;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.2rem;
-    }
-    .contact {
-      font-size: 0.95rem;
-      color: #495057;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    h2 {
-      border-bottom: 2px solid #dee2e6;
-      padding-bottom: 0.25rem;
-      font-size: 1.25rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .project-title {
-      font-weight: bold;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="images/favicon.gif" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <nav>
+    <div class="nav-left"><a href="#">Hsu Yee Mon</a></div>
+    <div class="nav-right">
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="https://medium.com/@hsuyeemon">Blog</a>
+    </div>
+  </nav>
+  
   <header>
-    <h1>Hsu Yee Mon</h1>
-    <div class="contact">
-      Chiang Mai, Thailand | hsuyeemon.1@gmail.com | +66 81 698 7448<br>
-      <a href="https://www.linkedin.com/in/hsu-yee-mon">linkedin.com/in/hsu-yee-mon</a>
+    <div class="header-content">
+      <div class="text-content">
+        <p>I am Hsu, a master’s student in Data Science focusing on NLP with deep learning models.<br>
+        Also passionate about digital literacy education and inclusive innovation for financial access.<br>
+        Previously worked in data analysis and AI engineering across international remote teams.</p>
+        <div class="contact-icons">
+          <a href="mailto:hsuyeemon.1@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+66816987448" title="Phone"><i class="fas fa-phone"></i></a>
+          <a href="https://www.linkedin.com/in/hsu-yee-mon" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="location">Chiang Mai, Thailand</div>
+      </div>
+      <img src="images/profile.jpg" alt="Hsu Yee Mon" class="profile-image" />
     </div>
   </header>
 
-  <section>
+  
+  <!--section id="summary">
     <h2>Summary</h2>
     <p>Master’s candidate in Data Science with a foundation in computer science and research in NLP. Nearly 3 years' experience in data analysis, ML, and AI. Skilled in Python and remote team collaboration. Passionate about data science for social impact.</p>
-  </section>
+  </section-->
 
-  <section>
+  <section id="skills">
     <h2>Technical Skills</h2>
-    <p><strong>Languages:</strong> Python, R, JavaScript, TypeScript<br>
-       <strong>NLP:</strong> QA, NER, Text Classification, Transformers<br>
-       <strong>ML:</strong> scikit-learn, TensorFlow, PyTorch, XGBoost, caret<br>
-       <strong>Data Tools:</strong> Pandas, NumPy, SQL<br>
-       <strong>Platforms:</strong> Git, GitHub, Docker, AWS, GCP, Jupyter, RStudio<br>
-       <strong>Environment:</strong> Agile, remote</p>
+    <ul>
+      <li><strong>Languages:</strong> Python, R, JavaScript, TypeScript</li>
+      <li><strong>NLP:</strong> QA, NER, Text Classification, Transformers</li>
+      <li><strong>ML:</strong> scikit-learn, TensorFlow, PyTorch, XGBoost, caret</li>
+      <li><strong>Data Tools:</strong> Pandas, NumPy, SQL</li>
+      <li><strong>Platforms:</strong> Git, GitHub, Docker, AWS, GCP, Jupyter, RStudio</li>
+      <li><strong>Environment:</strong> Agile, remote</li>
+    </ul>
   </section>
 
-  <section>
+  <section id="education">
     <h2>Education</h2>
-    <ul>
-      <li><strong>MSc in Data Science</strong>, Chiang Mai University, Thailand (2024–Present)</li>
-      <li><strong>Bachelor of Computer Science</strong>, UIT, Yangon (2015–2020)</li>
-      <li><strong>Internship</strong>, JAIST NLP Lab, Japan (2018)</li>
+    <ul>  
+      <li><strong>Masters of Science in Data Science</strong>, <a href="https://www.cmu.ac.th/en/home" target="_blank">Chiang Mai University, Thailand</a>(2024–Present)</li>
+      <li><strong>Bachelor of Computer Science</strong>, <a href="https://uit.edu.mm/" target="_blank">University of Information Technology,Yangon</a> (2015–2020)</li>
+      <li><strong>Visiting Student</strong>, <a href="https://www.jaist.ac.jp/english/" target="_blank">Japan Advanced Institute of Science and Technology(JAIST) , NLP Lab, Japan</a> (2018)</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Experience</h2>
+  <section id="experience">
+    <h2>Professional Experience</h2>
     <ul>
-      <li><strong>Business Intelligence Developer</strong>, ThitsaWorks (Sep 2023–Present)</li>
-      <li><strong>Data Analyst</strong>, ThitsaWorks (Jun 2022–Sep 2023)</li>
-      <li><strong>AI Engineer</strong>, Keisuu Myanmar (Oct 2020–Jul 2021)</li>
-      <li><strong>Intern</strong>, Keisuugiken Corporation, Japan (Jul–Oct 2020)</li>
+      <li>
+        <h3>Business Intelligence Developer</h3>
+        <span><a href="https://www.thitsaworks.com/" target="_blank">ThitsaWorks</a> – Chiang Mai, Thailand</span>
+        <span>Sep 2023–Present</span>
+        <!--ul>
+          <li>Developed data-driven solutions to optimize business intelligence processes using Python and SQL.</li>
+          <li>Led the creation of automated reporting dashboards for client insights and decision-making.</li>
+          <li>Introduced machine learning models to predict customer behavior and enhance forecasting accuracy.</li>
+        </ul-->
+      </li>
+  
+      <li>
+        <h3>Data Analyst</h3>
+        <span><a href="https://www.thitsaworks.com/" target="_blank">ThitsaWorks</a> – Chiang Mai, Thailand</span>
+        <span>Jun 2022–Sep 2023</span>
+        <!--ul>
+          <li>Analyzed and visualized complex data sets to uncover insights and provide actionable recommendations.</li>
+          <li>Created and maintained automated dashboards in Power BI and Tableau to track key business metrics.</li>
+          <li>Worked with stakeholders to define data requirements and ensured data quality and consistency.</li>
+          <li>Developed predictive models for demand forecasting and inventory optimization.</li>
+        </ul-->
+      </li>
+  
+      <li>
+        <h3>AI Engineer</h3>
+        <span><a href="https://www.keisuu.co.jp/" target="_blank">Keisuu Myanmar</a> – Yangon, Myanmar</span>
+        <span>Oct 2020–Jul 2021</span>
+        <!--ul>
+          <li>Implemented AI algorithms and machine learning models for various applications, including predictive analytics and recommendation systems.</li>
+          <li>Built and optimized scalable data processing pipelines using Python, TensorFlow, and PyTorch.</li>
+          <li>Collaborated with product teams to integrate AI-powered features into client-facing applications.</li>
+          <li>Provided mentorship and training to junior engineers in machine learning practices and model deployment.</li>
+        </ul-->
+      </li>
+  
+      <li>
+        <h3>Intern</h3>
+        <span><a href="https://www.keisuu.co.jp/" target="_blank">Keisuugiken Corporation, Japan</a></span>
+        <span>Jul 2020–Oct 2020</span>
+        <!--ul>
+          <li>Assisted in the development of machine learning models for financial predictions using historical data.</li>
+          <li>Contributed to the optimization of data processing pipelines for faster and more efficient model training.</li>
+          <li>Worked closely with the senior engineering team to understand AI applications in real-world business problems.</li>
+        </ul-->
+      </li>
+    </ul>
+  </section>
+  
+
+  <section id="volunteering">
+    <h2>Volunteering</h2>
+    <ul>
+      <li><strong>Co-Founder, Share It Forward</strong> – Led digital literacy sessions to enhance the digital skills of over a hundred youths. Mentored and trained volunteer mentors in 21st-century skills and research-based learning. Designed vocational training programs in data literacy and web development to address skills gaps. Oversaw volunteer teams to ensure smooth coordination and goal achievement. (2019–Present)</li>
+      <li><strong>Lead Teacher, IT Sky</strong> – Taught basic computer skills at a Monastic Education School (May 2019)</li>
+      <li><strong>Volunteer, Unicode Migration Transition</strong> – Supported Myanmar’s official adoption of Unicode fonts by assisting the public with transitioning (Oct 2019)</li>
+      <li><strong>Student Exhibitor, UIT Open Campus</strong> – Presented tech projects including Hospital Record System, Agriculture Platform, and E-Gov OSS prototype (2017–2019)</li>
+      <li><strong>Makeathon Participant</strong> – Collaborated on a solar-powered smart bench concept for campus innovation (2018)</li>
+      <li><strong>Programming Contest Participant</strong> – Represented university at Myanmar Collegiate Programming Contest (2018)</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Projects</h2>
+  <!--section id="skills">
+    <h2>Technical Skills</h2>
+    <ul class="skills-list">
+      <li>
+        <i class="fab fa-python"></i>
+        <span>Python</span>
+      </li>
+      <li>
+        <i class="fab fa-r-project"></i>
+        <span>R</span>
+      </li>
+      <li>
+        <i class="fab fa-js"></i>
+        <span>JavaScript</span>
+      </li>
+      <li>
+        <i class="fab fa-js"></i>
+        <span>TypeScript</span>
+      </li>
+      <li>
+        <i class="fab fa-github"></i>
+        <span>Git & GitHub</span>
+      </li>
+      <li>
+        <i class="fas fa-cloud"></i>
+        <span>AWS & GCP</span>
+      </li>
+      <li>
+        <i class="fab fa-docker"></i>
+        <span>Docker</span>
+      </li>
+      <li>
+        <i class="fas fa-cogs"></i>
+        <span>Machine Learning</span>
+      </li>
+      <li>
+        <i class="fas fa-database"></i>
+        <span>SQL & Databases</span>
+      </li>
+    </ul>
+  </section-->
+  
+
+  <section id="projects">
+    <h2>Project Highlights</h2>
     <ul>
-      <li><span class="project-title">Life Expectancy Prediction</span> – Supervised ML for Social Change</li>
-      <li><span class="project-title">Gapminder Data Research</span> – Internet & employment correlation</li>
-      <li><span class="project-title">Bike Share Case Study</span> – R-based Google Capstone</li>
-      <li><span class="project-title">Hluttaw Proposal Classifier</span> – Multi-class text classifier</li>
+      <li><span class="project-title"><a href="https://www.canva.com/design/DAF5NXzJU5w/oHJnmu5FdoGTBgTU2A2BbQ/view?utm_content=DAF5NXzJU5w&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">Life Expectancy Prediction</a></span> – Supervised ML for Social Change</li>
+      <li><span class="project-title"><a href="https://medium.com/@hsuyeemon/week-1-data-management-visualization-course-assignment-66edca94db3e" target="_blank">Gapminder Data Research</a></span> – Internet & employment correlation</li>
+      <li><span class="project-title"><a href="https://www.kaggle.com/hsuyeemon/cyclistics-bike-share-analysis" target="_blank">Bike Share Case Study</a></span> – R-based Google Capstone</li>
+      <li><span class="project-title"><a href="https://drive.google.com/file/d/1T4mH54qFyXrVY6PxkqpB1i93kxwJBdL0/view" target="_blank">Hluttaw Proposal Classifier</a></span> – Multi-class text classifier</li>
+      <li><span class="project-title">Active OSS</span> – E-government web app in Python</li>
+      <li><span class="project-title">Agri Trading Platform</span> – PHP-based produce marketplace</li>
     </ul>
   </section>
+  
+  
+  
 
-  <section>
+  <section id="awards">
     <h2>Awards & Leadership</h2>
     <ul>
       <li>Google Data Analytics Certificate (2022)</li>
@@ -114,5 +197,9 @@
       <li>Volunteer, Unicode Transition (2019)</li>
     </ul>
   </section>
+
+  <footer>
+    &copy; 2025 Hsu Yee Mon. All rights reserved.
+  </footer>
 </body>
 </html>
